@@ -4,11 +4,13 @@ import { Switch, Route } from 'react-router-dom'
 import Dashboard from '../pages/Dashboard';
 import Repository from '../pages/Repository';
 import Dasboard from '../pages/Dashboard';
+import Contact from '../pages/Contact';
 
 const Routes: React.FC = () => (
     <Switch>
         <Route path='/'exact component={Dasboard} />
-        <Route path='/repository/:repository+' component={Repository} />
+        <Route path='/contact'exact component={Contact} />
+        <Route path='/:repository+' component={Repository} />
     </Switch>
 
 )
