@@ -15,7 +15,7 @@ interface Repository{
 }
 
 
-const Dasboard: React.FC = () => {
+const Dashboard: React.FC = () => {
     const [newRepo, setNewRepo] = useState('')
     const [inputError, setInputError] = useState('')
     const [repositories, setRepositories] = useState<Repository[]>(() =>{
@@ -75,6 +75,7 @@ useEffect(()=> {
               {repositories.map(repository =>(
                     <Link key={repository.full_name} to={`/${repository.full_name}`}>
                     <img src={repository.owner.avatar_url} alt={repository.owner.login}/>
+                   
                     <div>
                         <strong>{repository.full_name}</strong>
                         <p>{repository.description}</p>
@@ -86,4 +87,4 @@ useEffect(()=> {
         </>
     )
 }
-export default Dasboard
+export default Dashboard

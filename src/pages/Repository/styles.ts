@@ -4,6 +4,7 @@ export const Header = styled.header`
     display:flex;
     align-items:center;
     justify-content:space-between;
+    max-width:900px;
 
     a{
         display :flex;
@@ -26,6 +27,7 @@ export const Header = styled.header`
 
 export const RepositoryInfo = styled.section`
 margin-top:80px;
+max-width:900px;
 header{
     display:flex;
     align-items:center;
@@ -85,6 +87,7 @@ margin-top:70px;
      background:#fff;
      border-radius:5px;
      width:100%;
+     max-width:900px;
      padding:24px;
      display:block;
      text-decoration:none;

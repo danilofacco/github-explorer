@@ -16,7 +16,7 @@ line-height:56px;
 
 export const Form = styled.form<FormsProps>`
 margin-top:40px;
-max-width:700px;
+max-width:900px;
 display:flex;
 
 input{
@@ -60,7 +60,7 @@ button{
 
 export const Repositories = styled.div`
  margin-top:70px;
- max-width:700px;
+ max-width:900px;
 
  a{
      background:#fff;
