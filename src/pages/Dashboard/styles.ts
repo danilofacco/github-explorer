@@ -7,6 +7,11 @@ interface FormsProps {
 }
 
 export const Title = styled.h1`
+@media (max-width:600px){
+    font-size:30px;
+    line-height:35px;
+}
+
 font-size:48px;
 color: #3a3a3a;
 margin-top:40px;
@@ -15,13 +20,26 @@ line-height:56px;
 `
 
 export const Form = styled.form<FormsProps>`
+  @media (max-width:600px){
+    margin-top:20px;
+}
 margin-top:40px;
 max-width:900px;
 display:flex;
 
-input{
+@media (max-width:600px){
+    display:block;
+}
 
-   
+
+input{
+    @media (max-width:600px){
+    border-radius: 5px;
+    width:100%;
+    height:50px;
+    font-size:12px;
+}
+
     flex:1;
     height:70px;
     padding: 0 24px;
@@ -42,6 +60,15 @@ input{
     }
 }
 button{
+
+    @media (max-width:600px){
+    margin-top:10px;
+    border-radius: 5px;
+    width:100%;
+    height:50px;
+}
+
+
     width:210px;
     height:70px;
     background: #04d361;
@@ -59,6 +86,9 @@ button{
 `
 
 export const Repositories = styled.div`
+  @media (max-width:600px){
+    margin-top:25px;
+}
  margin-top:70px;
  max-width:900px;
 
@@ -89,10 +119,17 @@ export const Repositories = styled.div`
          flex:1;
 
          strong{
+            @media (max-width:600px){
+                font-size: 15px;
+}
+
              font-size: 20px;
              color:#3d3d4d
          }
          p{
+                    @media (max-width:600px){
+                        font-size: 13px;
+        }
             font-size:18px;
             color:#a8a8b3;
             margin-top:4px;

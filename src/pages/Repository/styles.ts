@@ -26,6 +26,9 @@ export const Header = styled.header`
 `
 
 export const RepositoryInfo = styled.section`
+  @media (max-width:600px){
+    margin-top:25px;
+}
 margin-top:80px;
 max-width:900px;
 header{
@@ -33,6 +36,10 @@ header{
     align-items:center;
 
     img{
+        @media (max-width:600px){
+        width:80px;
+        height:80px;
+}
         width:120px;
         height:120px;
         border-radius:50%
@@ -42,11 +49,17 @@ header{
         margin-left:24px;
 
         strong{
+            @media (max-width:600px){
+                font-size:25px;
+}
             font-size:36px;
             color:#3d3d4d;
         }
 
         p{
+            @media (max-width:600px){
+                font-size:15px;
+}
             font-size:18px;
             color:#737380;
             margin-top:4px;
@@ -57,13 +70,22 @@ ul{
     display:flex;
     list-style:none;
     margin-top:40px;
+    @media (max-width:600px){
+        margin-top:25px;
+}
 
     li{
 
         & + li{
+            @media (max-width:600px){
+                margin-left:45px;
+}
             margin-left:80px;
         }
         strong{
+            @media (max-width:600px){
+                font-size:25px;
+}
             display:block;
             font-size:36px;
             color:#3d3d4d
@@ -83,7 +105,14 @@ ul{
 
 export const Issues = styled.section`
 margin-top:70px;
+@media (max-width:600px){
+    margin-top:25px;
+}
+
  a{
+    @media (max-width:600px){
+        padding:15px;
+}
      background:#fff;
      border-radius:5px;
      width:100%;
@@ -106,10 +135,18 @@ margin-top:70px;
          flex:1;
 
          strong{
+            @media (max-width:600px){
+                font-size: 15px;
+}
+
              font-size: 20px;
              color:#3d3d4d
          }
          p{
+            @media (max-width:600px){
+                font-size: 13px;
+}
+
             font-size:18px;
             color:#a8a8b3;
             margin-top:4px;
