@@ -2,6 +2,53 @@ import { shade } from 'polished'
 import styled, { css } from 'styled-components'
 
 
+export const Container = styled.div`
+        margin:10px;
+        display: flex;
+        justify-items:center;
+        justify-content:center;
+        align-items: center;
+        width:100%;
+       
+
+    span {
+      font-size: 20px;
+      color: #85868c;
+    }
+    
+    .block {
+     width:100%;
+     text-align:center;
+    }
+   
+     `
+
+export const ClickToAction = styled.div`
+        margin:10px;
+        display: flex;
+        justify-items:center;
+        justify-content:space-around;
+        align-items: center;
+        width:100%;
+    
+       
+   
+     `
+
+export const TreeColumns = styled.div`
+        flex-wrap: wrap;
+        margin:10px;
+        display: flex;
+        justify-items:center;
+        justify-content:space-around;
+        align-items: center;
+        width:100%;
+    
+       
+   
+     `
+
+
 interface FormsProps {
     hasError: boolean;
 }
@@ -84,69 +131,4 @@ button{
     }
 }
  
-`
-
-export const Repositories = styled.div`
-  @media (max-width:600px){
-    margin-top:25px;
-}
- margin-top:70px;
- max-width:900px;
-
- a{
-     background:#fff;
-     border-radius:5px;
-     width:100%;
-     padding:24px;
-     display:block;
-     text-decoration:none;
-     display:flex;
-     align-items:center;
-     transition: transform 0.2s;
-     &:hover{
-        transform:translateX(10px);
-     }
-     & + a{
-       margin-top:16px;
-     }
-     img{
-         width:64px;
-         height:64px;
-         border-radius:50%;
-
-     }
-     div{
-         margin:0 16px;
-         flex:1;
-
-         strong{
-            @media (max-width:600px){
-                font-size: 15px;
-}
-
-             font-size: 20px;
-             color:#3d3d4d
-         }
-         p{
-                    @media (max-width:600px){
-                        font-size: 13px;
-        }
-            font-size:18px;
-            color:#a8a8b3;
-            margin-top:4px;
-         }
-     }
-     svg{
-         margin-left:auto;
-         color:#cbcbd6;
-     }
-
-  
- }
-`
-
-export const Error = styled.span`
-display:block;
-color:#c53030;
-margin-top: 8px;
 `
