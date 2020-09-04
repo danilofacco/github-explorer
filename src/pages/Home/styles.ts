@@ -24,13 +24,27 @@ export const Container = styled.div`
      `
 
 export const ClickToAction = styled.div`
-        margin:10px;
+        border: 2px #EBEBEB solid;
+        border-radius:8px;
+        margin:30px 20px;
+        padding:15px;
         display: flex;
         justify-items:center;
         justify-content:space-around;
         align-items: center;
         width:100%;
-    
+
+        .c25{
+            width:25% !important;
+            height:60px;
+            margin:10px;
+        }
+
+        .c75{
+            width:75% !important;
+            margin:10px;    
+        }
+       
        
    
      `

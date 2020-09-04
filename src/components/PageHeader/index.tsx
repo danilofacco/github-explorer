@@ -1,11 +1,24 @@
 import React from 'react';
 import Logo from '../../assets/images/logo.png';
 import { Link } from 'react-router-dom';
-import { PageHeaderDiv } from './styles';
+import { PageHeaderDiv,TopBar } from './styles';
 import {GiHamburgerMenu} from 'react-icons/gi'
 
 function PageHeader() {
   return (
+    <>
+    <TopBar>
+      <div className="block_container">
+      <div id="esquerda">
+      <Link to="/">Dicas que te fazem bem</Link>
+      <Link to="/">Mensagens de esperança</Link>
+      </div>
+      <div id="direita" >
+      <Link to="/">Instagram</Link>
+      <Link to="/">Facebook</Link>
+      </div>
+      </div>
+    </TopBar>
     <div className="block_container">
       <PageHeaderDiv>
           <div id="esquerda">
@@ -24,6 +37,7 @@ function PageHeader() {
           </div>
     </PageHeaderDiv>
     </div>
+    </>
   );
 }
 

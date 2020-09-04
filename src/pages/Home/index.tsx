@@ -9,9 +9,6 @@ import TabelaPreco from  '../../components/TabelaPreco'
 import { Container, TreeColumns,ClickToAction } from './styles'
 import {SiWhatsapp} from 'react-icons/si'
 
- 
-
-
 const Home: React.FC = () => {
  
     return (
@@ -36,9 +33,11 @@ const Home: React.FC = () => {
             </TreeColumns>
 
             <ClickToAction>
-            <a className="buttonGreen" href="/" ><SiWhatsapp size={20}/>Contratar</a>
+            <a className="buttonGreen c25" href="/" ><SiWhatsapp size={20}/>Solicitar Proposta</a>
+            <div className="c75">
             <h3>Você tem empresa? Solicite uma proposta!</h3>
             <p>Para grupo empresarial temos uma proposta personalizada para os seus colaboradores.</p>
+            </div>
             </ClickToAction>
 
             </div>

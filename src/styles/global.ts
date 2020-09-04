@@ -1,5 +1,5 @@
-import {createGlobalStyle} from 'styled-components'
-import { shade } from 'polished' 
+import { createGlobalStyle } from 'styled-components'
+import { shade } from 'polished'
 export default createGlobalStyle`
 *{
     margin:0;
@@ -34,6 +34,17 @@ h2{
     color:#333333;
 }
 
+h3{
+            font-size:23px;
+            color:#333333;
+        }
+    
+    
+P{
+    font: normal 15px / 27px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+    word-spacing: normal;
+    color: #85868c;
+}
 .buttonRed{
       margin:5px;
       display:flex;
