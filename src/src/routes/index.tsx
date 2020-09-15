@@ -3,10 +3,10 @@ import { Switch, Route } from 'react-router-dom'
 
  
 import Repository from '../pages/Repository';
-import Home from '../pages/Home'; 
+import Dassboard from '../pages/Dashboard'; 
 const Routes: React.FC = () => (
     <Switch>
-        <Route path='/'exact component={Home} /> 
+        <Route path='/'exact component={Dassboard} /> 
         <Route path='/:repository+' component={Repository} />
     </Switch>
 
